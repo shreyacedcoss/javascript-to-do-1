@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    
+    <script>
+        var ary = [
+           
+        
+            ["Samsung","Galexy",64,15000],
+            
+            ["Nokia","S730",64,22000],
+            ["Xiaomi","Note",32,22000],
+            ["Motorala","G10",32,15000],
+            ["Apple","S12",64,22000]
+        ];
+        document.write("<table border ='1px' cellspacing ='0'>");
+            document.write("<thead> <tr>");
+                document.write("<th>Company</th><th>Model</th><th>Memory(GB)</th><th>Price(Rs)</th>");
+
+        for (var a = 0; a < 5; a++){
+            document.write("<tr>");
+         for (var b = 0; b < 4; b++){
+            document.write ("<td>" + ary[a][b]+ "</td> ");
+         }
+         document.write("</tr>");
+        }
+        document.write("</table>")
+
+
+
+        
+    </script>
+</head>
+<body>
+    <div id="table"></div>
+    
+</body>
+</html>
